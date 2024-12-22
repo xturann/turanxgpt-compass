@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    --icon-color: #3498db; /* Varsayılan olarak mavi */
+    --background-color: rgba(0, 0, 0, 0.55); /* Kutucuk arka planı */
+    --text-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600; /* Açıklık 400'den 600'e yükseltildi */
+}
+
+#compass {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.compass-box {
+    background: var(--background-color);
+    color: var(--text-color);
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    white-space: nowrap; /* Tek satırda tut */
+    font-weight: 600; /* Daha kalın metin için bu değeri 400'den 600'e yükselttik */
+}
+
+.compass-box i {
+    color: var(--icon-color);
+    font-size: 18px;
+}
